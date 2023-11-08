@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Regisztráció</title>
+    <style>
+
+    td{
+        width: 300px
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form action="lapp.html">
+            <h1 style="color: blue">Regisztráció</h1>
+            <div>   
+                <label for="radio">Megszólítás</label>
+
+            </div>
+            <div>   
+                    <input type="radio" name="radio" id="radio">
+                    <label for="">Úrhölgy</label>
+                    
+                    
+                    <input type="radio" name="radio" id="radio">
+                    <label for="">Úr</label>
+            </div>
+            <table>
+                <tr>
+                    <td>    
+                        <label for="veznev">Vezetéknév*</label>
+
+                    </td>
+                    <td>
+                        <label for="kernev">Keresztnév*</label>
+                    </td>
+                </tr>
+                <tr style="padding-top: 10px">  
+                    <td><input type="text" name="veznev" id="veznev" required></td>
+                    <td><input type="text" name="kernev" id="kernev" required></td>  
+                    
+                    
+                </tr>
+                <tr style="padding-top: 10px">
+                    <td>
+                        <div>
+                                <label for="szulido">Születési idő*</label>
+                        </div>
+                        
+                        <input type="date" name="szulido" id="szulido" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mail">Email-cím*</label>
+                        <input type="email" name="mail" id="mail" required>
+
+                    </td>
+                    <td>
+                        <label for="mailujra">E-mail cím ismételt megadása*</label>
+                        <input type="email" name="mailujra" id="mailujra" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass1">Jelszó*</label>
+                        <input type="password" name="pass1" id="pass1" required>
+                    </td>
+                    <td>
+                            <label for="pass2">Jelszó ismét megadása*</label>
+                            <input type="password" name="pass2" id="pass2" required>
+                    </td>
+                </tr>
+            </table>
+            <label for="">*- Kötelező mezők</label>
+            <div>
+                <input type="checkbox" name="elf1" id="elf1"> Tudomásul vettem és elfogadom az Általános Szerződési...
+
+            </div>
+            <div>
+                <input type="checkbox" name="elf2" id="elf2"> 
+
+            </div>
+
+
+
+        </form>
+
+
+    </div>
+
+</body>
+</html>
